@@ -10,7 +10,7 @@ readme = "README.md"
 license = "MIT"
 requires-python = ">=3.10"
 authors = [
-    {name = "Yijiang"},
+    {name = "Yijiang Pang"},
 ]
 keywords = ["cli", "terminal", "ai", "shell", "natural-language", "command-line", "openai", "gpt"]
 classifiers = [
@@ -46,9 +46,9 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yijiang/cmdo"
-Repository = "https://github.com/yijiang/cmdo"
-Issues = "https://github.com/yijiang/cmdo/issues"
+Homepage = "https://github.com/YijiangPang/cmdo"
+Repository = "https://github.com/YijiangPang/cmdo"
+Issues = "https://github.com/YijiangPang/cmdo/issues"
 
 [project.scripts]
 cmdo = "cmdo.cli:main"
