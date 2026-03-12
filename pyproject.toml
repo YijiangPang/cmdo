@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmdo"
+version = "0.1.0"
+description = "Natural language to shell commands — just say what you want and cmdo does it."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    {name = "Yijiang"},
+]
+keywords = ["cli", "terminal", "ai", "shell", "natural-language", "command-line", "openai", "gpt"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Shells",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+    "openai>=1.0",
+    "tomli>=2.0; python_version < '3.11'",
+    "tomli-w>=1.0",
+    "pyperclip>=1.8",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-mock>=3.0",
+    "build",
+    "twine",
+]
+
+[project.urls]
+Homepage = "https://github.com/yijiang/cmdo"
+Repository = "https://github.com/yijiang/cmdo"
+Issues = "https://github.com/yijiang/cmdo/issues"
+
+[project.scripts]
+cmdo = "cmdo.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
