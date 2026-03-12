@@ -25,7 +25,7 @@ $ cmdo "compress the checkpoints folder"
 ## Install
 
 ```bash
-pip install cmdo
+pip install cmdo-cli
 ```
 
 Requires Python 3.10+.
