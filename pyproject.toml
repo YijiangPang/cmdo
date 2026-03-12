@@ -3,7 +3,7 @@ requires = ["setuptools>=68.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cmdo"
+name = "cmdo-cli"
 version = "0.1.0"
 description = "Natural language to shell commands — just say what you want and cmdo does it."
 readme = "README.md"
